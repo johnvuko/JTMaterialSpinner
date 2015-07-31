@@ -1,0 +1,14 @@
+PODS:
+  - JTMaterialSpinner (1.0.0)
+
+DEPENDENCIES:
+  - JTMaterialSpinner (from `..`)
+
+EXTERNAL SOURCES:
+  JTMaterialSpinner:
+    :path: ..
+
+SPEC CHECKSUMS:
+  JTMaterialSpinner: e8f918f0e741bf1ccad1f35454ec14ef7b2599ee
+
+COCOAPODS: 0.37.2
