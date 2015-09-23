@@ -45,6 +45,8 @@
     _circleLayer.strokeColor = [UIColor orangeColor].CGColor;
     _circleLayer.strokeStart = 0;
     _circleLayer.strokeEnd = 0;
+
+    self.isAnimating = NO;
 }
 
 - (void)layoutSubviews
@@ -72,8 +74,20 @@
     self.circleLayer.frame = self.bounds;
 }
 
+- (void)forceBeginRefreshing
+{
+    self.isAnimating = NO;
+    [self beginRefreshing];
+}
+
 - (void)beginRefreshing
 {
+    if(self.isAnimating){
+        return;
+    }
+    
+    self.isAnimating = YES;
+
     CAKeyframeAnimation *rotateAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
     rotateAnimation.values = @[
                                @0,
@@ -123,6 +137,7 @@
 
 - (void)endRefreshing
 {
+    self.isAnimating = NO;
     [self.circleLayer removeAnimationForKey:@"animations"];
 }
 
