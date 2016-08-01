@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3C8D090A1D4FF63800B0D835 /* JTMaterialSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C8D09091D4FF63800B0D835 /* JTMaterialSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C8D09121D4FF74A00B0D835 /* JTMaterialSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8D09111D4FF74A00B0D835 /* JTMaterialSpinner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C8D09061D4FF63800B0D835 /* JTMaterialSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTMaterialSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8D09091D4FF63800B0D835 /* JTMaterialSpinner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTMaterialSpinner.h; sourceTree = "<group>"; };
 		3C8D090B1D4FF63800B0D835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C8D09111D4FF74A00B0D835 /* JTMaterialSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTMaterialSpinner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		3C8D09081D4FF63800B0D835 /* JTMaterialSpinner */ = {
 			isa = PBXGroup;
 			children = (
+				3C8D09111D4FF74A00B0D835 /* JTMaterialSpinner.m */,
 				3C8D09091D4FF63800B0D835 /* JTMaterialSpinner.h */,
 				3C8D090B1D4FF63800B0D835 /* Info.plist */,
 			);
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8D09121D4FF74A00B0D835 /* JTMaterialSpinner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +281,7 @@
 				3C8D09101D4FF63800B0D835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
