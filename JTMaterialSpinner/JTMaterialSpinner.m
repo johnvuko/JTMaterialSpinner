@@ -45,8 +45,10 @@
     _circleLayer.strokeColor = [UIColor orangeColor].CGColor;
     _circleLayer.strokeStart = 0;
     _circleLayer.strokeEnd = 0;
-
+    
     self.isAnimating = NO;
+    
+    self.animationDuration = 1;
 }
 
 - (void)layoutSubviews
@@ -87,6 +89,8 @@
     }
     
     self.isAnimating = YES;
+    
+    NSTimeInterval duration = self.animationDuration;
 
     CAKeyframeAnimation *rotateAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
     rotateAnimation.values = @[
@@ -97,32 +101,32 @@
     
     CABasicAnimation *headAnimation = [CABasicAnimation animation];
     headAnimation.keyPath = @"strokeStart";
-    headAnimation.duration = 1;
+    headAnimation.duration = duration;
     headAnimation.fromValue = @0;
     headAnimation.toValue = @.25;
     
     CABasicAnimation *tailAnimation = [CABasicAnimation animation];
     tailAnimation.keyPath = @"strokeEnd";
-    tailAnimation.duration = 1;
+    tailAnimation.duration = duration;
     tailAnimation.fromValue = @0;
     tailAnimation.toValue = @1;
     
     CABasicAnimation *endHeadAnimation = [CABasicAnimation animation];
     endHeadAnimation.keyPath = @"strokeStart";
-    endHeadAnimation.beginTime = 1.;
-    endHeadAnimation.duration = 1;
+    endHeadAnimation.beginTime = duration;
+    endHeadAnimation.duration = duration;
     endHeadAnimation.fromValue = @.25;
     endHeadAnimation.toValue = @1;
     
     CABasicAnimation *endTailAnimation = [CABasicAnimation animation];
     endTailAnimation.keyPath = @"strokeEnd";
-    endTailAnimation.beginTime = 1;
-    endTailAnimation.duration = 1;
+    endTailAnimation.beginTime = duration;
+    endTailAnimation.duration = duration;
     endTailAnimation.fromValue = @1;
     endTailAnimation.toValue = @1;
     
     CAAnimationGroup *animations = [CAAnimationGroup animation];
-    animations.duration = 2;
+    animations.duration = duration * 2;
     animations.animations = @[
                               rotateAnimation,
                               headAnimation,
