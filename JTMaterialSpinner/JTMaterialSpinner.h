@@ -7,6 +7,14 @@
 
 #import <UIKit/UIKit.h>
 
+//! Project version number for JTMaterialSpinner.
+FOUNDATION_EXPORT double JTMaterialSpinnerVersionNumber;
+
+//! Project version string for JTMaterialSpinner.
+FOUNDATION_EXPORT const unsigned char JTMaterialSpinnerVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <JTMaterialSpinner/PublicHeader.h>
+
 @interface JTMaterialSpinner : UIView
 
 @property (nonatomic, readonly) CAShapeLayer *circleLayer;
