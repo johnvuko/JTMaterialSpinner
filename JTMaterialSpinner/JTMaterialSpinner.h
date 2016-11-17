@@ -13,7 +13,7 @@
 @property (nonatomic) BOOL isAnimating;
 
 /*!
- * Duration of the animation. 1 second by default.
+ * Duration of the animation. 2 second by default.
  */
 @property (nonatomic) NSTimeInterval animationDuration;
 

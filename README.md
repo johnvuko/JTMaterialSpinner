@@ -44,6 +44,9 @@ With [CocoaPods](http://cocoapods.org/), add this line to your Podfile.
 
     // Change the color of the line
     _spinnerView.circleLayer.strokeColor = [UIColor orangeColor].CGColor;
+
+    // Change the duration of the animation
+    _spinnerView.animationDuration = 2.5;
 }
 
 - (void)loadSomething
