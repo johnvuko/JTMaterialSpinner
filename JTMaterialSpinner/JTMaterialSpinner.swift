@@ -73,7 +73,7 @@ open class JTMaterialSpinner: UIView {
         
         self.isAnimating = true
         
-        var rotateAnimation = CAKeyframeAnimation(keyPath: "transform.rotation")
+        let rotateAnimation = CAKeyframeAnimation(keyPath: "transform.rotation")
         rotateAnimation.values = [
             0.0,
             Float.pi,
@@ -81,30 +81,30 @@ open class JTMaterialSpinner: UIView {
         ]
         
         
-        var headAnimation = CABasicAnimation(keyPath: "strokeStart")
+        let headAnimation = CABasicAnimation(keyPath: "strokeStart")
         headAnimation.duration = (self.animationDuration / 2.0)
         headAnimation.fromValue = 0
         headAnimation.toValue = 0.25
         
-        var tailAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        let tailAnimation = CABasicAnimation(keyPath: "strokeEnd")
         tailAnimation.duration = (self.animationDuration / 2.0)
         tailAnimation.fromValue = 0
         tailAnimation.toValue = 1
         
-        var endHeadAnimation = CABasicAnimation(keyPath: "strokeStart")
+        let endHeadAnimation = CABasicAnimation(keyPath: "strokeStart")
         endHeadAnimation.beginTime = (self.animationDuration / 2.0)
         endHeadAnimation.duration = (self.animationDuration / 2.0)
         endHeadAnimation.fromValue = 0.25
         endHeadAnimation.toValue = 1
         
         
-        var endTailAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        let endTailAnimation = CABasicAnimation(keyPath: "strokeEnd")
         endTailAnimation.beginTime = (self.animationDuration / 2.0)
         endTailAnimation.duration = (self.animationDuration / 2.0)
         endTailAnimation.fromValue = 1
         endTailAnimation.toValue = 1
         
-        var animations = CAAnimationGroup()
+        let animations = CAAnimationGroup()
         animations.duration = self.animationDuration
         animations.animations = [
             rotateAnimation,
