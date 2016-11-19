@@ -11,7 +11,7 @@ An iOS spinner view based on material design.
 
 With [CocoaPods](http://cocoapods.org/), add this line to your Podfile.
 
-    pod 'JTMaterialSpinner', '~> 1.0'
+    pod 'JTMaterialSpinner', '~> 2.0'
 
 ## Screenshots
 
@@ -21,47 +21,45 @@ With [CocoaPods](http://cocoapods.org/), add this line to your Podfile.
 
 ### Basic usage
 
-```objective-c
-#import <UIKit/UIKit.h>
-#import <JTMaterialSpinner/JTMaterialSpinner.h>
+```swift
+import UIKit
+import JTMaterialSpinner
 
-@interface ViewController : UIViewController
+class ViewController: UIViewController {
 
-@property (weak, nonatomic) IBOutlet JTMaterialSpinner *spinnerView;
+    var spinnerView = JTMaterialSpinner()
 
-@end
-```
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Customize the line width
+        spinnerView.circleLayer.lineWidth = 2.0
 
-```objective-c
-@implementation ViewController
+        // Change the color of the line
+        spinnerView.circleLayer.strokeColor = UIColor.orange.cgColor
+        
+        // Change the duration of the animation
+        spinnerView.animationDuration = 2.5
+    }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    // Customize the line width
-    _spinnerView.circleLayer.lineWidth = 2.0;
-
-    // Change the color of the line
-    _spinnerView.circleLayer.strokeColor = [UIColor orangeColor].CGColor;
-
-    // Change the duration of the animation
-    _spinnerView.animationDuration = 2.5;
+    func loadSomething () {
+        spinnerView.beginRefreshing()
+        MyService.loadSomeData() { () -> () in
+            spinnerView.endRefreshing()
+        }
+    }
 }
 
-- (void)loadSomething
-{    
-    [_spinnerView beginRefreshing];
-    [MyService loadSomeData:^(){
-        [_spinnerView endRefreshing];
-    }];
-}
 ```
+
+## Known Issues
+
+Animation stop when the application go in background, you have to restart it manually.
 
 ## Requirements
 
-- iOS 7 or higher
-- Automatic Reference Counting (ARC)
+- iOS 8.0 or higher
+- Swift 3.0
 
 ## Author
 

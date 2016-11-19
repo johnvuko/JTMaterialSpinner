@@ -1,0 +1,6 @@
+framework module JTMaterialSpinner {
+  umbrella header "JTMaterialSpinner-umbrella.h"
+
+  export *
+  module * { export * }
+}
