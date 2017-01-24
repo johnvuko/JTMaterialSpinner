@@ -52,10 +52,6 @@ class ViewController: UIViewController {
 
 ```
 
-## Known Issues
-
-Animation stop when the application go in background, you have to restart it manually.
-
 ## Requirements
 
 - iOS 8.0 or higher

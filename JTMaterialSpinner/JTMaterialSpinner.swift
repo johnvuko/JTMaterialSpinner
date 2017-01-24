@@ -114,6 +114,7 @@ open class JTMaterialSpinner: UIView {
             endTailAnimation
         ]
         animations.repeatCount = Float.infinity
+        animations.removedOnCompletion = false
         
         self.circleLayer.add(animations, forKey: "animations")
     }
