@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/cocoapods/l/JTMaterialSpinner.svg)
 ![Platform](https://img.shields.io/cocoapods/p/JTMaterialSpinner.svg)
 
-An iOS spinner view based on material design.
+An iOS material design spinner view.
 
 ## Installation
 
