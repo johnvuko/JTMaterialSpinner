@@ -9,7 +9,7 @@ import UIKit
 
 open class JTMaterialSpinner: UIView {
     
-    open let circleLayer = CAShapeLayer()
+    public let circleLayer = CAShapeLayer()
     open private(set) var isAnimating = false
     open var animationDuration : TimeInterval = 2.0
     
@@ -27,7 +27,7 @@ open class JTMaterialSpinner: UIView {
         self.layer.addSublayer(circleLayer)
         
         circleLayer.fillColor = nil
-        circleLayer.lineCap = kCALineCapRound
+        circleLayer.lineCap = CAShapeLayerLineCap.round
         circleLayer.lineWidth = 1.5
         
         circleLayer.strokeColor = UIColor.orange.cgColor
