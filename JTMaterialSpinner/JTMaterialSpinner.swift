@@ -27,7 +27,7 @@ open class JTMaterialSpinner: UIView {
         self.layer.addSublayer(circleLayer)
         
         circleLayer.fillColor = nil
-        circleLayer.lineCap = kCALineCapRound
+        circleLayer.lineCap = CAShapeLayerLineCap.round
         circleLayer.lineWidth = 1.5
         
         circleLayer.strokeColor = UIColor.orange.cgColor
