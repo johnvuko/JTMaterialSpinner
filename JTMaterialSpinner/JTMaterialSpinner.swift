@@ -27,12 +27,17 @@ open class JTMaterialSpinner: UIView {
         self.layer.addSublayer(circleLayer)
         
         circleLayer.fillColor = nil
-        circleLayer.lineCap = CAShapeLayerLineCap.round
         circleLayer.lineWidth = 1.5
         
         circleLayer.strokeColor = UIColor.orange.cgColor
         circleLayer.strokeStart = 0
         circleLayer.strokeEnd = 0
+
+        #if swift(>=4.2)
+            circleLayer.lineCap = CAShapeLayerLineCap.round
+        #else
+            circleLayer.lineCap = kCALineCapRound
+        #endif
     }
     
     open override func layoutSubviews() {
