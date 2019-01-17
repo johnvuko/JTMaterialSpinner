@@ -10,4 +10,7 @@ Pod::Spec.new do |s|
   s.source_files  = 'JTMaterialSpinner/*'
   s.requires_arc = true
   s.screenshots   = ["https://raw.githubusercontent.com/jonathantribouharet/JTMaterialSpinner/master/Screens/example.gif"]
+  pod_target_xcconfig = {
+    'SWIFT_VERSION' => '4.2'
+  }
 end

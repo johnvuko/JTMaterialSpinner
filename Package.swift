@@ -1,5 +1,6 @@
 import PackageDescription
 
 let package = Package(
-	name: "JTMaterialSpinner"
+	name: "JTMaterialSpinner",
+	swiftLanguageVersions: [4]
 )
