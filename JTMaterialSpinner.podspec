@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JTMaterialSpinner"
-  s.version      = "3.0.4"
+  s.version      = "3.0.5"
   s.summary      = "An iOS spinner view based on material design."
   s.homepage     = "https://github.com/jonathantribouharet/JTMaterialSpinner"
   s.license      = { :type => 'MIT' }
@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.source_files  = 'JTMaterialSpinner/*'
   s.requires_arc = true
   s.screenshots   = ["https://raw.githubusercontent.com/jonathantribouharet/JTMaterialSpinner/master/Screens/example.gif"]
-  pod_target_xcconfig = {
+  s.swift_version = '4.2'
+  s.pod_target_xcconfig = {
     'SWIFT_VERSION' => '4.2'
   }
 end
