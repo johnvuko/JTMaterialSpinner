@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JTMaterialSpinner"
-  s.version      = "3.0.3"
+  s.version      = "3.0.4"
   s.summary      = "An iOS spinner view based on material design."
   s.homepage     = "https://github.com/jonathantribouharet/JTMaterialSpinner"
   s.license      = { :type => 'MIT' }

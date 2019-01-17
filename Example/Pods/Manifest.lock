@@ -1,5 +1,5 @@
 PODS:
-  - JTMaterialSpinner (3.0.3)
+  - JTMaterialSpinner (3.0.4)
 
 DEPENDENCIES:
   - JTMaterialSpinner (from `..`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
-  JTMaterialSpinner: f79416899f9d5d558ea7004c9cfad9414a3d37d3
+  JTMaterialSpinner: e794fa3ceca25b0aa5532bf0469b57de08041d1a
 
 PODFILE CHECKSUM: a45eae521f867b1b973bc0a2b497b94317b6763f
 

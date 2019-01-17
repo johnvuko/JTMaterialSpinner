@@ -1,6 +1,6 @@
 {
   "name": "JTMaterialSpinner",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "summary": "An iOS spinner view based on material design.",
   "homepage": "https://github.com/jonathantribouharet/JTMaterialSpinner",
   "license": {
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/jonathantribouharet/JTMaterialSpinner.git",
-    "tag": "3.0.3"
+    "tag": "3.0.4"
   },
   "source_files": "JTMaterialSpinner/*",
   "requires_arc": true,
